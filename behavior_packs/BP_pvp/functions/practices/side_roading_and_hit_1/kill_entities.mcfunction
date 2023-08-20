@@ -1,0 +1,1 @@
+kill @e[type=!player,x=11,y=201,z=5,dx=8,dy=8,dz=-57]

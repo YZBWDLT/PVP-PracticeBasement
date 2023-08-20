@@ -1,0 +1,39 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "pvppractice:explosion",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true,
+            "runtime_identifier": "minecraft:snowball"
+        },
+        "components": {
+            "minecraft:physics": { "has_collision": false, "has_gravity": false },
+            "minecraft:collision_box": { "height": 0, "width": 0 },
+            "minecraft:type_family": { "family": [ "inanimate", "explosion" ] },
+            "minecraft:health": { "value": 1, "max": 1 },
+            "minecraft:damage_sensor": { "triggers": [ { "cause": "entity_explosion", "deals_damage": false } ] }
+        },
+        "events": {
+            "explode_level_1": { "add": { "component_groups": [ "explode_level_1" ] } },
+            "explode_level_2": { "add": { "component_groups": [ "explode_level_2" ] } },
+            "explode_level_3": { "add": { "component_groups": [ "explode_level_3" ] } },
+            "explode_level_4": { "add": { "component_groups": [ "explode_level_4" ] } }
+        },
+        "component_groups": {
+            "explode_level_1": {
+                "minecraft:explode": { "destroy_affected_by_griefing": true, "fuse_lit": true, "power": 1, "fuse_length": 0 }
+            },
+            "explode_level_2": {
+                "minecraft:explode": { "destroy_affected_by_griefing": true, "fuse_lit": true, "power": 2, "fuse_length": 0 }
+            },
+            "explode_level_3": {
+                "minecraft:explode": { "destroy_affected_by_griefing": true, "fuse_lit": true, "power": 3, "fuse_length": 0 }
+            },
+            "explode_level_4": {
+                "minecraft:explode": { "destroy_affected_by_griefing": true, "fuse_lit": true, "power": 4, "fuse_length": 0 }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "PVP练习基地",
+        "description": "PVP练习基地",
+        "uuid": "20956564-a38a-44c3-be21-8d707ab8a5e3",
+        "version": [ 1, 0, 2 ],
+        "min_engine_version": [ 1, 18, 0 ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "15ee606a-c1e9-442a-9f6b-dcdca24c8cd3",
+            "version": [ 1, 0, 0 ]
+        }
+    ]
+}
